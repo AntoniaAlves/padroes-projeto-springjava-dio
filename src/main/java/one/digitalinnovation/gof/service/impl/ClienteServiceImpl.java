@@ -54,21 +54,21 @@ public void inserir(Cliente cliente) {
 
 @Override
 public void atualizar(Long id, Cliente cliente) {
-	// FIXME Buscar Cliente por Id, caso exista.
+	
 	Optional <Cliente> clientebd = clienteRepository.findById(id); 
 	if (clientebd.isPresent()) {
 		salvarClienteComCep(cliente);
 		
-	// FIXME verificar se o endereço do cliente já existe (pelo CEP)
-	// FIXME caso não exista integrar com o ViaCep e persistir o retorno.
-	// FIXME Inserir Cliente, vinculando o Endereço (novo ou existente)
+	//  verificar se o endereço do cliente já existe (pelo CEP)
+	//  caso não exista integrar com o ViaCep e persistir o retorno.
+	//  Inserir Cliente, vinculando o Endereço (novo ou existente)
 	
 		}
 	}
 
 	@Override
 	public void deletar(Long id) {
-		// FIXME Deletar Cliente por Id.
+		//  Deletar Cliente por Id.
 		clienteRepository.deleteById(id);
 		
 	}
