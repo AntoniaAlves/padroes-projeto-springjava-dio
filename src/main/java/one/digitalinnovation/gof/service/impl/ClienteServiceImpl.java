@@ -68,7 +68,7 @@ public void atualizar(Long id, Cliente cliente) {
 
 	@Override
 	public void deletar(Long id) {
-		//  Deletar Cliente por Id.
+		// TODO Deletar Cliente por Id.
 		clienteRepository.deleteById(id);
 		
 	}
